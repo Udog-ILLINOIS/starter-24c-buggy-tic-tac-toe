@@ -24,8 +24,8 @@ int main() {
     }
 
     if (MakeMove(board, row, col, current_player)) {
+      PrintBoard(board);
       if (IsBoardFull(board)) {
-        PrintBoard(board);
         std::cout << "It's a tie!" << std::endl;
         break;
       }
